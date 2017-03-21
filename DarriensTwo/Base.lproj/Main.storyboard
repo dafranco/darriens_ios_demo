@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="WSp-P1-mJw">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Darrien's home page-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DarriensTwo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pbf-OI-C1X">
+                                <rect key="frame" x="0.0" y="0.0" width="365" height="667"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="MqF-3d-f7d">
+                                        <rect key="frame" x="8" y="8" width="357" height="309.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Darriens test app" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UR3-nv-UjV">
+                                                <rect key="frame" x="0.0" y="0.0" width="357" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKP-9h-rrX">
+                                                <rect key="frame" x="0.0" y="25.5" width="357" height="142.5"/>
+                                                <string key="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wLx-1h-UAI">
+                                                <rect key="frame" x="0.0" y="173" width="357" height="30"/>
+                                                <state key="normal" title="Play video">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="playVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fo9-HT-kn1"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edJ-RQ-gG6">
+                                                <rect key="frame" x="0.0" y="208" width="357" height="101.5"/>
+                                                <string key="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculu</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailingMargin" secondItem="MqF-3d-f7d" secondAttribute="trailingMargin" constant="11" id="864-1r-uFw"/>
+                                    <constraint firstItem="MqF-3d-f7d" firstAttribute="width" secondItem="Pbf-OI-C1X" secondAttribute="width" constant="-8" id="AgW-6l-PxF"/>
+                                    <constraint firstItem="MqF-3d-f7d" firstAttribute="leading" secondItem="Pbf-OI-C1X" secondAttribute="leadingMargin" id="LiA-92-7oU"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="MqF-3d-f7d" secondAttribute="bottom" id="Vjd-yq-iD3"/>
+                                    <constraint firstItem="MqF-3d-f7d" firstAttribute="top" secondItem="Pbf-OI-C1X" secondAttribute="topMargin" id="iSE-Ib-6d4"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.46919535391552925" green="0.6508985441828502" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Pbf-OI-C1X" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Krn-GD-qRl"/>
+                            <constraint firstItem="Pbf-OI-C1X" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ly1-cO-2Ox"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Pbf-OI-C1X" secondAttribute="bottom" id="jZe-Oc-kd1"/>
+                            <constraint firstAttribute="trailing" secondItem="Pbf-OI-C1X" secondAttribute="trailing" constant="10" id="u3A-6b-3wx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Darrien's home page" id="zVf-D4-Kyd">
+                        <barButtonItem key="rightBarButtonItem" title="See ads" id="e4A-v0-yrx">
+                            <connections>
+                                <segue destination="TOj-ec-JdI" kind="show" id="S35-Lm-bFj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1207.2" y="776.76161919040487"/>
+        </scene>
+        <!--Player View Controller-->
+        <scene sceneID="eab-Lv-Ww7">
+            <objects>
+                <viewController id="TOj-ec-JdI" customClass="PlayerViewController" customModule="DarriensTwo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xk9-g8-3lL"/>
+                        <viewControllerLayoutGuide type="bottom" id="2AO-TH-DEn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PDP-Fb-lpb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2z1-7e-nZX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2266" y="777"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5wT-C6-WUi">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WSp-P1-mJw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="eqr-R2-sW5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="FMo-yu-IiB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ju6-X8-cRp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="125.59999999999999" y="776.76161919040487"/>
+        </scene>
+    </scenes>
+</document>
